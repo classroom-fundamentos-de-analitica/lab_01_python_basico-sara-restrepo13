@@ -12,7 +12,7 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 """
 
-def pregunta_01(archivo):
+def pregunta_01():
     """
     Retorne la suma de la segunda columna.
 
@@ -20,6 +20,7 @@ def pregunta_01(archivo):
     214
 
     """
+    archivo=open("data.csv","r")
     list=[]
     suma=0
     for line in archivo:
@@ -470,8 +471,7 @@ def pregunta_12(archivo):
 
 
 
-file=open("data.csv","r")
-pregunta_01(file)
+pregunta_01()
 
 file=open("data.csv","r")
 pregunta_02(file)
