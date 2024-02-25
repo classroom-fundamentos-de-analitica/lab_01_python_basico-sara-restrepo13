@@ -33,7 +33,7 @@ def pregunta_01():
     
 
 
-def pregunta_02(archivo):
+def pregunta_02():
     """
     Retorne la cantidad de registros por cada letra de la primera columna como la lista
     de tuplas (letra, cantidad), ordendas alfabéticamente.
@@ -48,6 +48,7 @@ def pregunta_02(archivo):
     ]
 
     """
+    archivo=open("data.csv","r")
     lista=[]
     conteo={}
 
@@ -65,7 +66,7 @@ def pregunta_02(archivo):
 
 
 
-def pregunta_03(archivo):
+def pregunta_03():
     """
     Retorne la suma de la columna 2 por cada letra de la primera columna como una lista
     de tuplas (letra, suma) ordendas alfabeticamente.
@@ -80,6 +81,7 @@ def pregunta_03(archivo):
     ]
 
     """
+    archivo=open("data.csv","r")
     lista_1=[]
     letra={}
 
@@ -98,7 +100,7 @@ def pregunta_03(archivo):
     
 
 
-def pregunta_04(archivo):
+def pregunta_04():
     """
     La columna 3 contiene una fecha en formato `YYYY-MM-DD`. Retorne la cantidad de
     registros por cada mes, tal como se muestra a continuación.
@@ -120,6 +122,7 @@ def pregunta_04(archivo):
     ]
 
     """
+    archivo=open("data.csv","r")
     lista_comp=[]
     lista_fechas=[]
     lista_fechas2=[]
@@ -149,7 +152,7 @@ def pregunta_04(archivo):
 
 
 
-def pregunta_05(archivo):
+def pregunta_05():
     """
     Retorne una lista de tuplas con el valor maximo y minimo de la columna 2 por cada
     letra de la columa 1.
@@ -164,6 +167,7 @@ def pregunta_05(archivo):
     ]
 
     """
+    archivo=open("data.csv","r")
     letra={}
 
     for line in archivo:
@@ -182,7 +186,7 @@ def pregunta_05(archivo):
 
         
 
-def pregunta_06(archivo):
+def pregunta_06():
     """
     La columna 5 codifica un diccionario donde cada cadena de tres letras corresponde a
     una clave y el valor despues del caracter `:` corresponde al valor asociado a la
@@ -204,6 +208,7 @@ def pregunta_06(archivo):
     ]
 
     """
+    archivo=open("data.csv","r")
     lista_comp=[]
     lista_valores=[]
     lista_valores2=[]
@@ -232,7 +237,7 @@ def pregunta_06(archivo):
     
 
 
-def pregunta_07(archivo):
+def pregunta_07():
     """
     Retorne una lista de tuplas que asocien las columnas 0 y 1. Cada tupla contiene un
     valor posible de la columna 2 y una lista con todas las letras asociadas (columna 1)
@@ -253,6 +258,7 @@ def pregunta_07(archivo):
     ]
 
     """
+    archivo=open("data.csv","r")
     numero={}
 
     for line in archivo:
@@ -271,7 +277,7 @@ def pregunta_07(archivo):
 
 
 
-def pregunta_08(archivo):
+def pregunta_08():
     """
     Genere una lista de tuplas, donde el primer elemento de cada tupla contiene  el valor
     de la segunda columna; la segunda parte de la tupla es una lista con las letras
@@ -293,6 +299,7 @@ def pregunta_08(archivo):
     ]
 
     """
+    archivo=open("data.csv","r")
     numero={}
 
     for line in archivo:
@@ -312,7 +319,7 @@ def pregunta_08(archivo):
 
 
 
-def pregunta_09(archivo):
+def pregunta_09():
     """
     Retorne un diccionario que contenga la cantidad de registros en que aparece cada
     clave de la columna 5.
@@ -332,6 +339,7 @@ def pregunta_09(archivo):
     }
 
     """
+    archivo=open("data.csv","r")
     lista_comp=[]
     lista_valores=[]
     lista_valores2=[]
@@ -356,7 +364,7 @@ def pregunta_09(archivo):
     return diccionario
 
 
-def pregunta_10(archivo):
+def pregunta_10():
     """
     Retorne una lista de tuplas contengan por cada tupla, la letra de la columna 1 y la
     cantidad de elementos de las columnas 4 y 5.
@@ -374,6 +382,7 @@ def pregunta_10(archivo):
 
 
     """
+    archivo=open("data.csv","r")
     lista=[]
     tuplas=[]
     
@@ -390,7 +399,7 @@ def pregunta_10(archivo):
             
     
 
-def pregunta_11(archivo):
+def pregunta_11():
     """
     Retorne un diccionario que contengan la suma de la columna 2 para cada letra de la
     columna 4, ordenadas alfabeticamente.
@@ -408,6 +417,7 @@ def pregunta_11(archivo):
 
 
     """
+    archivo=open("data.csv","r")
     letras={}
     lista=[]
     claves=[]
@@ -437,7 +447,7 @@ def pregunta_11(archivo):
     
 
 
-def pregunta_12(archivo):
+def pregunta_12():
     """
     Genere un diccionario que contengan como clave la columna 1 y como valor la suma de
     los valores de la columna 5 sobre todo el archivo.
@@ -452,6 +462,7 @@ def pregunta_12(archivo):
     }
 
     """
+    archivo=open("data.csv","r")
     suma_valores = {}
 
     for line in archivo:
@@ -472,36 +483,14 @@ def pregunta_12(archivo):
 
 
 pregunta_01()
-
-file=open("data.csv","r")
-pregunta_02(file)
-
-file=open("data.csv","r")
-pregunta_03(file)
-
-file=open("data.csv","r")
-pregunta_04(file)
-
-file=open("data.csv","r")
-pregunta_05(file)
-
-file=open("data.csv","r")
-pregunta_06(file)
-
-file=open("data.csv","r")
-pregunta_07(file)
-
-file=open("data.csv","r")
-pregunta_08(file)
-
-file=open("data.csv","r")
-pregunta_09(file)
-
-file=open("data.csv","r")
-pregunta_10(file)
-
-file=open("data.csv","r")
-pregunta_11(file)
-
-file=open("data.csv","r")
-pregunta_12(file)
+pregunta_02()
+pregunta_03()
+pregunta_04()
+pregunta_05()
+pregunta_06()
+pregunta_07()
+pregunta_08()
+pregunta_09()
+pregunta_10()
+pregunta_11()
+pregunta_12()
